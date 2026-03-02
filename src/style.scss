@@ -1,0 +1,88 @@
+/**
+ * style.scss — styles loaded on BOTH the front-end and in the editor.
+ */
+
+.custom-card-block {
+	/* Honour full / wide alignment */
+	&.alignfull,
+	&.alignwide {
+		.custom-card-block__card {
+			max-width: 100%;
+		}
+	}
+}
+
+.custom-card-block__card {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+	background: #fff;
+	max-width: 400px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+	}
+}
+
+/* ── Image ── */
+.custom-card-block__image-wrapper {
+	overflow: hidden;
+}
+
+.custom-card-block__image {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+
+	.custom-card-block__card:hover & {
+		transform: scale(1.03);
+	}
+}
+
+/* ── Body ── */
+.custom-card-block__body {
+	padding: 20px;
+}
+
+.custom-card-block__title {
+	margin: 0 0 10px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #1e1e1e;
+}
+
+.custom-card-block__description {
+	margin: 0 0 16px;
+	font-size: 0.95rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+/* ── Button ── */
+.custom-card-block__button-wrapper {
+	display: inline-block;
+}
+
+.custom-card-block__button {
+	display: inline-block;
+	padding: 10px 24px;
+	background: #0073aa;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.2s ease;
+
+	&:hover,
+	&:focus {
+		background: #005177;
+		color: #fff;
+		text-decoration: none;
+	}
+}

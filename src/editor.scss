@@ -1,0 +1,105 @@
+/**
+ * editor.scss — styles applied ONLY inside the Gutenberg editor.
+ */
+
+.custom-card-block {
+	.custom-card-block__card {
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+		background: #fff;
+		max-width: 400px;
+		font-family: inherit;
+	}
+
+	/* ── Image Area ── */
+	.custom-card-block__image-wrapper {
+		position: relative;
+		background: #f0f0f0;
+		min-height: 200px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.custom-card-block__image-container {
+		position: relative;
+		width: 100%;
+	}
+
+	.custom-card-block__image {
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+		display: block;
+	}
+
+	/* Overlay action buttons when image is present */
+	.custom-card-block__image-actions {
+		position: absolute;
+		bottom: 8px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		gap: 8px;
+		background: rgba(255, 255, 255, 0.9);
+		padding: 6px 10px;
+		border-radius: 4px;
+		white-space: nowrap;
+	}
+
+	/* Placeholder styling */
+	.components-placeholder {
+		min-height: 200px;
+	}
+
+	/* ── Card Body ── */
+	.custom-card-block__body {
+		padding: 20px;
+	}
+
+	.custom-card-block__title {
+		margin: 0 0 10px !important;
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.3;
+		color: #1e1e1e;
+
+		&.rich-text:empty::before {
+			color: #aaa;
+		}
+	}
+
+	.custom-card-block__description {
+		margin: 0 0 16px !important;
+		font-size: 0.95rem;
+		color: #555;
+		line-height: 1.6;
+	}
+
+	/* ── Button ── */
+	.custom-card-block__button-wrapper {
+		display: inline-block;
+	}
+
+	.custom-card-block__button {
+		display: inline-block;
+		padding: 10px 24px;
+		background: #0073aa;
+		color: #fff !important;
+		border-radius: 4px;
+		font-size: 0.9rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background 0.2s ease;
+
+		&:hover {
+			background: #005177;
+		}
+
+		// Editable span inside the editor
+		.rich-text {
+			color: #fff;
+		}
+	}
+}
