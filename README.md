@@ -1,7 +1,6 @@
 # Custom Card Block
 
-A Gutenberg block with an image, title, description, and button. Styled with Tailwind CSS.
-
+A Gutenberg block with an image, title, description, and button. 
 ---
 
 ## Requirements
