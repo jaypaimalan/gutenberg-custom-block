@@ -3,7 +3,7 @@
  * Plugin Name:       Custom Card Block
  * Description:       A custom Gutenberg card block with image, title, description, and button.
  * Version:           1.0.0
- * Author:            Your Name
+ * Author:            FJP
  * License:           GPL-2.0-or-later
  * Text Domain:       custom-card-block
  */
